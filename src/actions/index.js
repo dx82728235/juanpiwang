@@ -1,4 +1,4 @@
-export const action = (type,value)=>{
+export const action = (type,value)=>({
     type,
     value
-}
+})
