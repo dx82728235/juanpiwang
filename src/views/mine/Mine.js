@@ -4,7 +4,7 @@ export default class Mine extends Component {
   render() {
     return (
       <div>
-        
+        mine
       </div>
     )
   }

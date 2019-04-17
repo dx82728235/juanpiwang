@@ -4,7 +4,7 @@ export default class Classify extends Component {
   render() {
     return (
       <div>
-        
+        classify
       </div>
     )
   }

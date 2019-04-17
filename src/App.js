@@ -13,7 +13,11 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-
+          <Redirect from='/' to="/home" exact/>
+          <Route path='/home' component={Home}/>
+          <Route path='/classify' component={Classify}/>
+          <Route path='/cart' component={Cart}/>
+          <Route path='/mine' component={Mine}/>
         </Switch>
         <TabBarCom/>
       </Router>
