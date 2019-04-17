@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import {mapStateToProps,mapDispatchToProps} from "@mapprops/classify";
+import {connect} from 'react-redux';
 
-export default class Classify extends Component {
+class Classify extends Component {
   render() {
     return (
       <div>
@@ -9,3 +11,5 @@ export default class Classify extends Component {
     )
   }
 }
+
+export default connect(mapStateToProps,mapDispatchToProps)(Classify);

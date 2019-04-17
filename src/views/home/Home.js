@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux';
+import {mapStateToProps,mapDispatchToProps} from "@mapprops/home"
 
-export default class Home extends Component {
+class Home extends Component {
   render() {
     return (
       <div>
@@ -9,3 +11,5 @@ export default class Home extends Component {
     )
   }
 }
+
+export default connect(mapStateToProps,mapDispatchToProps)(Home);

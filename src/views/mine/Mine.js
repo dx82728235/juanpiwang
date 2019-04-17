@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import {mapStateToProps,mapDispatchToProps} from "@mapprops/mine";
+import {connect} from 'react-redux';
 
-export default class Mine extends Component {
+class Mine extends Component {
   render() {
     return (
       <div>
@@ -9,3 +11,5 @@ export default class Mine extends Component {
     )
   }
 }
+
+export default connect(mapStateToProps,mapDispatchToProps)(Mine);
