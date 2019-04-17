@@ -12,7 +12,7 @@ class TabBarCom extends Component {
   }
   render() {
     return (
-      <div style={this.state.fullScreen ? { position: 'fixed', height: '100%', width: '100%', top: 0 } : { height: 400 }}>
+      <div style={this.state.fullScreen ? { position: 'fixed', width: '100%', bottom: 0 } : { height: ".25rem" }}>
         <TabBar
           unselectedTintColor="#949494"
           tintColor="#ff464e"
