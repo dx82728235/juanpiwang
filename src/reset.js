@@ -11,7 +11,7 @@ address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:norm
 
 ul, ol ,li{ list-style:none; }
 
-body { color:#333;  background:#fff;}
+body { color:#333;  background:#fff;font-family: PingFang-SC-Regular,Helvetica Neue,Helvetica,Droid Sans Fallback,microsoft yahei,sans-serif;}
 
 a { color:#666; text-decoration:none; }
 
@@ -22,4 +22,9 @@ body,html,#root{
     overflow: hidden;
     font-size:31.25vw;
 }
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar {display:none}
 `

@@ -1,13 +1,12 @@
 //textData  做测试用的 改成自己的
-import {testDateAction} from '@actions/actionCreator/cart'
+import {isEditAction} from '@actions/actionCreator/cart'
 
 export const mapStateToProps = (state)=>({
-    test:state.getIn(['Cart','test'])
+    isEdit:state.getIn(["Cart",'isEdit']),
 })
 
 export const mapDispatchToProps = (dispatch)=>({
-    //getState  做测试用的 改成自己的
-    getState(){
-        dispatch(testDateAction())
+    haneleIsEdit(){    
+        dispatch(isEditAction())
     }
 })

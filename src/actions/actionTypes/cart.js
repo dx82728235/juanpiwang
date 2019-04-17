@@ -1,1 +1,1 @@
-export const testDates = "TEST_DATE";
+export const cartIsEditAction = "cart/IS_EDIT";
