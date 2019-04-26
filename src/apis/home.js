@@ -1,4 +1,4 @@
 import {http} from '@/utils/http'
-
-//name 改成自己的
-export const name = ()=>http("GET","")
+export const HomeBanner = ()=>http("GET","/home/getSildeList?abbreviation=&limit=")
+export const HomeNews = ()=>http("GET","/home/getClassifyItem?city_id=0&operation_limit=5")
+export const HomeMock = ()=>http("GET","/goods/goodsInfo");
