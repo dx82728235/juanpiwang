@@ -1,5 +1,5 @@
 import {fetch as fetchfill} from 'whatwg-fetch';
-
+import qs from "qs"
 export const http = (method,url,data)=>{
     if(method === 'GET'){
         var str = '';
@@ -13,7 +13,7 @@ export const http = (method,url,data)=>{
     }else{
         return fetchfill(url,{
             method:'POST',
-            body:JSON.stringify(data)
+            body:qs.stringify(data)
         })
         .then(res=>res.json())
     }

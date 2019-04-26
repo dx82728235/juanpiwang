@@ -1,0 +1,11 @@
+h2{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.12rem;
+    font-weight: 900;
+    background: #ccc;
+    border-radius: 0;
+    font-style: normal;
+}
